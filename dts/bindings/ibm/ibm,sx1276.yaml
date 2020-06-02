@@ -1,0 +1,14 @@
+description: IBM-LMIC LoRa Device
+
+compatible: "ibm,sx1276"
+
+include: spi-device.yaml
+
+properties:
+  reset-gpios:
+    type: phandle-array
+    required: false
+
+  dio0-gpios:
+    type: phandle-array
+    required: false
