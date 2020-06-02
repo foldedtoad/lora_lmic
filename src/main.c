@@ -51,9 +51,7 @@ void main_thread(void * id, void * unused1, void * unused2)
 
    //ble_start_advertising();
 
-#ifdef CONFIG_LORA
     lora_app_init();
-#endif
 }
 
 K_THREAD_DEFINE(main_id, STACKSIZE, main_thread, 
